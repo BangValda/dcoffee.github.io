@@ -1,0 +1,369 @@
+h1, h2, h3, h4, h5, h6, p, a, button {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.jumbotron {
+    background-image: url('img/BGNew.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar {
+    background-color: #d3d3d3; /* Gray background */
+}
+.navbar-brand img {
+    height: 40px; /* Logo height */
+}
+.btn-sign-in,
+.btn-sign-up {
+    background-color: #a67c52; /* Brown button color */
+    border-color: #a67c52;
+    color: white;
+}
+.btn-sign-up {
+    background-color: transparent;
+    color: #a67c52;
+}
+.btn-sign-in:hover,
+.btn-sign-up:hover {
+    background-color: #8b5e3c;
+    border-color: #8b5e3c;
+}
+
+.card {
+    border: none;
+    background-color: transparent;
+}
+.card img {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.card img:hover {
+    transform: scale(1.05);
+}
+
+.custom-bg {
+    background-image: url('img/BACKGROUND.jpg');
+    background-size: cover;  /* Ensures the image covers the entire area */
+    background-position: center;  /* Centers the background image */
+    background-attachment: fixed; 
+    height: 100vh; /* Makes the background image fixed during scroll */
+}
+
+.cat-fill {
+    position: relative;
+    top: 50px;
+}
+.categories h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.cat-head {
+    position: relative;   
+}
+
+.categories-box {
+    display: flexbox;
+    flex-wrap: wrap;
+    margin: 0px 100px 0px 100px;
+    align-items: center;
+}
+
+.cat-box {
+    background-color: white;
+    width: 200px;
+    height: 250px;
+    border-radius: 1rem;
+    display: inline-flex; 
+    margin: 20px 30px 0px 0px ;
+    justify-content: center;
+}
+
+.cat-img{
+    width: 180px;
+    height: 180px;
+    position: relative;
+    top: 10px;
+}
+
+.custom-container {
+    max-width: 1300px; /* Atur lebar maksimum */
+    padding: 30px; /* Tambahkan padding */
+    border-radius: 15px; /* Radius sudut */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan */
+}
+
+.custom-card {
+    width: 200px; /* Lebar kartu */
+    height: auto;
+}
+
+.custom-img {
+    width: 180px; 
+    height: 150px; 
+    object-fit: cover;  
+    border-radius: 5px;
+    display: flex;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+
+.recom-cont {
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative;
+    height: 450px;
+    
+
+}
+.recom {/* Set max width for the slider */
+    max-width: 1000px;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    
+
+    
+}
+
+.recom-fill {
+    display: flex;
+    
+}
+
+.fill {
+    display: flex;
+}
+
+.img-fill  {
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    height: 200px;
+    width: 50px;
+    margin: 0px;
+}
+
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    left: 150px;
+    rotate: 180deg;
+}
+
+.swiper-button-next {
+    position: absolute;
+    top: 50%;
+    right:150px;
+}
+
+.promo {
+    background-image: url("img/promo.jpg");
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers content horizontally */
+    position: relative;
+}
+
+.promo-fill {
+    display: flex;
+    align-items: center; /* Centers content within .promo-fill */
+    color: white;
+    position: relative;
+    left: 100px;
+}
+.snacks {
+    background-color: #EDDCC2;
+    display: flex;
+    justify-content: center;
+
+}
+.snacks-fill {
+    display: flex;
+    position: relative;
+    gap: 350px;
+    margin: 50px;
+}
+
+.sna-fill {
+    position: relative;
+    top: 35px;
+}
+.sna-fill h1 {
+    margin: 0;
+}
+
+.sna-fill p {
+    font-weight: bold;
+    margin: 0;
+}
+
+.sna-fill a {
+    color: white;
+}
+
+.sna-promo {
+    display: inline-block;
+    text-align: center;
+    padding: 20px 60px;
+    border-radius: 15px;
+    background-color: #986B54;
+    position: relative;
+    top: 50px;
+}
+
+.sna-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between items */
+    max-width: 600px; /* Optional: Set max width of grid */
+    margin: auto; /* Center the grid */
+}
+
+.sna-col img {
+    height: 150px;
+}
+
+@media (max-width: 768px) {
+    .snacks {
+        background-color: #EDDCC2;
+        justify-content: center;
+    
+    }
+    .snacks-fill {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 10px;
+        margin: 150px auto;
+    } 
+    .sna-col {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        gap: 20px; /* Space between items */
+        max-width: 600px; /* Optional: Set max width of grid */
+        margin: auto; /* Center the grid */
+    }
+}
+
+.news {
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative;
+    margin: 60px;
+    text-align: center;
+}
+.new-fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-fill {
+    display: flex;
+    align-items: center;
+}
+.news-1 {
+    overflow: hidden;
+    max-width: 800px;
+}
+.new-fill img{
+    height: 350px;
+}
+
+.swiper-button-prev2 {
+    position: absolute;
+    top: 50%;
+    left: 150px;
+    rotate: 180deg;
+}
+
+.swiper-button-next2 {
+    position: absolute;
+    top: 50%;
+    right:150px;
+}
+
+.footer {
+    background-color: #666;
+    color: #ccc;
+    padding: 0;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-column {
+    margin: 10px;
+    min-width: 150px;
+}
+.footer-column {
+    margin: 10px;
+    min-width: 150px;
+}
+.footer-column p {
+    max-width: 300px;
+    text-align: justify; /* Adjust width to control line breaks */
+}
+.footer-column h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-column ul li {
+    margin: 5px 0;
+}
+.footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+.footer-column ul li a:hover {
+    color: #fff;
+}
+.footer .contact-info p, .footer .contact-info a {
+    margin: 5px 0;
+    color: #ccc;
+    text-decoration: none;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.social-icons a {
+    font-size: 20px;
+    color: #ccc;
+    text-decoration: none;
+}
+
+.copyright {
+    display: flex;
+    background-color: #585858;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 150px;
+    font-size: 14px;
+}
+
+.kanan-copy {
+    display: flex;
+    position: relative;
+    gap: 20px;
+}

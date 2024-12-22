@@ -1,0 +1,90 @@
+   <div class="categories">
+        <div class="container custom-container">
+            <h1 class="categories text-center">CATEGORIES</h1>
+            <div class="row row-cols-5">
+                <div class="col">
+                    <div class="card shadow-sm rounded-3 custom-card">
+                        <img src="img/KOPI 8.jpg" class="custom-img" alt="Coffee 1">
+                        <div class="card-body">
+                            <p class="card-text mt-3">Kopi Kenangan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm rounded-3 custom-card">
+                        <img src="img/KOPI 8.jpg" class="custom-img" alt="Coffee 1">
+                        <div class="card-body">
+                            <p class="card-text mt-3">Kopi Kenangan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm rounded-3 custom-card">
+                        <img src="img/KOPI 8.jpg" class="custom-img" alt="Coffee 1">
+                        <div class="card-body">
+                            <p class="card-text mt-3">Kopi Kenangan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm rounded-3 custom-card">
+                        <img src="img/KOPI 8.jpg" class="custom-img" alt="Coffee 1">
+                        <div class="card-body">
+                            <p class="card-text mt-3">Kopi Kenangan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm rounded-3 custom-card">
+                        <img src="img/KOPI 8.jpg" class="custom-img" alt="Coffee 1">
+                        <div class="card-body">
+                            <p class="card-text mt-3">Kopi Kenangan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-5 mt-5">
+                <div class="col">
+                    <div class="card shadow-sm rounded-3 custom-card">
+                        <img src="img/KOPI 8.jpg" class="custom-img" alt="Coffee 1">
+                        <div class="card-body">
+                            <p class="card-text mt-3">Kopi Kenangan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm rounded-3 custom-card">
+                        <img src="img/KOPI 8.jpg" class="custom-img" alt="Coffee 1">
+                        <div class="card-body">
+                            <p class="card-text mt-3">Kopi Kenangan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm rounded-3 custom-card">
+                        <img src="img/KOPI 8.jpg" class="custom-img" alt="Coffee 1">
+                        <div class="card-body">
+                            <p class="card-text mt-3">Kopi Kenangan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm rounded-3 custom-card">
+                        <img src="img/KOPI 8.jpg" class="custom-img" alt="Coffee 1">
+                        <div class="card-body">
+                            <p class="card-text mt-3">Kopi Kenangan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm rounded-3 custom-card">
+                        <img src="img/KOPI 8.jpg" class="custom-img" alt="Coffee 1">
+                        <div class="card-body">
+                            <p class="card-text mt-3">Kopi Kenangan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 

@@ -1,0 +1,76 @@
+using System;
+using System.Windows;
+
+
+namespace oop2
+{
+    public partial class LoginRegisterWindow : Window
+    {
+        public LoginRegisterWindow()
+        {
+            InitializeComponent();
+        }
+
+        // Handle the LOGIN button click event
+        private void LoginButton_Click(object sender, RoutedEventArgs e)
+        {
+            string email = EmailTextBox.Text;
+            string password = PasswordInput.Password;
+
+            // Check if login credentials match the saved data
+            if (email == Properties.Settings.Default.UserEmail && password == Properties.Settings.Default.UserPassword)
+            {
+                MessageBox.Show("Login successful!");
+                this.Close();  // Close the login window
+            }
+            else
+            {
+                MessageBox.Show("Invalid email or password.");
+            }
+        }
+
+        // Switch to Register Form
+        private void SwitchToRegister(object sender, RoutedEventArgs e)
+        {
+            LoginPanel.Visibility = Visibility.Collapsed;
+            RegisterPanel.Visibility = Visibility.Visible;
+        }
+
+        // Handle the REGISTER button click event
+        private void RegisterButton_Click(object sender, RoutedEventArgs e)
+        {
+            string email = RegisterEmailTextBox.Text;
+            string password = RegisterPasswordInput.Password;
+            string confirmPassword = ConfirmPasswordInput.Password;
+
+            // Basic validation for empty fields
+            if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(confirmPassword))
+            {
+                MessageBox.Show("All fields must be filled.");
+                return;
+            }
+
+            // Check if the passwords match
+            if (password != confirmPassword)
+            {
+                MessageBox.Show("Passwords do not match.");
+                return;
+            }
+
+            // Save user data to Settings
+            Properties.Settings.Default.UserEmail = email;
+            Properties.Settings.Default.UserPassword = password;
+            Properties.Settings.Default.Save();  // Save the data permanently
+
+            MessageBox.Show("Registration successful!");
+            SwitchToLogin(sender, e);
+        }
+
+        // Switch to Login Form
+        private void SwitchToLogin(object sender, RoutedEventArgs e)
+        {
+            RegisterPanel.Visibility = Visibility.Collapsed;
+            LoginPanel.Visibility = Visibility.Visible;
+        }
+    }
+}
